@@ -1,0 +1,106 @@
+#ifndef MESSAGES_h
+#define MESSAGES_h
+
+#define MAX_MESSAGES 64
+
+#define MSG_KEY_PRESSED          0
+#define MSG_L_ENCODER_PRESSED    1
+#define MSG_L_ENCODER_CW         2
+#define MSG_L_ENCODER_CCW        3
+#define MSG_R_ENCODER_PRESSED    4
+#define MSG_R_ENCODER_CW         5
+#define MSG_R_ENCODER_CCW        6
+#define MSG_CUR_ACTIVATE         7
+#define MSG_CUR_DEACTIVATE       8
+#define MSG_ADC_READY            9
+
+#define MSG_VAR_CHANGED          10
+
+#define MSG_EDITOR_SCREEN_ACTIVATE      11
+#define MSG_EDITOR_ACTIVATE      12
+
+#define MSG_EDITOR_KEY_UP        13
+#define MSG_EDITOR_KEY_DOWN      14
+#define MSG_EDITOR_KEY_LEFT      15
+#define MSG_EDITOR_KEY_RIGHT     16
+#define MSG_EDITOR_FINISHED      17
+#define MSG_EDITOR_CANCELLED     18
+#define MSG_EDITOR_DEACTIVATED   19
+
+#define MSG_MESSAGE_SCREEN_ACTIVATE    20
+#define MSG_MESSAGE_SCREEN_DEACTIVATED 21
+/*
+#define MSG_MS_ACTIVATE          1
+#define MSG_PS_ACTIVATE          2
+#define MSG_PS_DEACTIVATED       3
+#define MSG_HELP_ACTIVATE        4
+#define MSG_HELP_DEACTIVATED     5
+#define MSG_CS_ACTIVATE          6
+#define MSG_CS_DEACTIVATED       7
+#define MSG_EDITOR_ACTIVATE      10
+#define MSG_EDITOR_KEY_UP        11
+#define MSG_EDITOR_KEY_DOWN      12
+#define MSG_EDITOR_KEY_LEFT      13
+#define MSG_EDITOR_KEY_RIGHT     14
+#define MSG_EDITOR_FINISHED      15
+#define MSG_EDITOR_CANCELLED     16
+#define MSG_PASSWORD_ACTIVATE    17
+#define MSG_CALSTART_ACTIVATE    18
+#define MSG_CALTIME_ACTIVATE     19
+#define MSG_CALIBRATION_ACTIVATE 20
+#define MSG_LOGO_ACTIVATE        21
+#define MSG_LOGO_DEACTIVATED     22
+#define MSG_LOGO_DEACTIVATE      23
+#define MSG_DLG_OK               24
+#define MSG_DLG_CANCEL           25
+#define MSG_MM_ACTIVATE          26
+#define MSG_MM_DEACTIVATED       27
+#define MSG_SETTIME_ACTIVATE     28
+#define MSG_PASSWORD_MISMATCH_ACTIVATE 29
+#define MSG_RESDLG_ACTIVATE      30
+#define MSG_DT_EDITOR_ACTIVATE   31
+#define MSG_DT_EDITOR_FINISHED   32
+#define MSG_DT_EDITOR_CANCELLED  33
+#define MSG_DT_EDITOR_KEY_UP     34
+#define MSG_DT_EDITOR_KEY_DOWN   35
+//#define MSG_GET_RTC_DATA         36
+#define MSG_RTC_DATA_READY       36
+#define MSG_EEPROM_DATA_READY    37
+#define MSG_EEPROM_DATA_WRITTEN  38
+#define MSG_USER_PASS_ENTERED    39
+#define MSG_CAL_PASS_ENTERED     40
+#define MSG_USER_PASS_CHANGED    41
+#define MSG_CAL_PASS_CHANGED     42
+//#define MSG_USER_DATA_CHANGED     43
+#define MSG_TM_ACTIVATE          43
+#define MSG_TM_DEACTIVATED       44
+#define MSG_ADC_SCREEN_ACTIVATE  45
+#define MSG_DI_SCREEN_ACTIVATE   46
+#define MSG_DO_SCREEN_ACTIVATE   47
+#define MSG_DAC_SCREEN_ACTIVATE  48
+#define MSG_ADDMIX_ACTIVATE      49
+#define MSG_DELMIX_ACTIVATE      50
+#define MSG_ENTER_CONCENTRATION_ACTIVATE      51
+#define MSG_IMPOSSIBLE_CONCENTRATION_ACTIVATE 52
+
+#define MSG_TOOGLE_LEFT_CHANNEL  53
+#define MSG_TOOGLE_RIGHT_CHANNEL 54
+
+#define MSG_LEFT_CHANNEL_STATE_CHANGED  55
+#define MSG_RIGHT_CHANNEL_STATE_CHANGED 56
+
+#define MSG_MODBUS_ACTIVATE 57
+#define MSG_CLAPP_SCREEN_ACTIVATE 58
+*/
+
+void InitMessages(void);
+
+void SendMessage(char Msg);
+
+//void SendIRQMessage(char Msg);
+
+char GetMessage(char Msg);
+
+void ProcessMessages(void);
+
+#endif
